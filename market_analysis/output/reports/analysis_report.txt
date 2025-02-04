@@ -1,0 +1,57 @@
+Stock Market Analysis Report: -------------------------
+
+Information Technology Sector:
+Annual Return: 24.72%
+Volatility: 22.13%
+Sharpe Ratio: 0.98
+-------------------------
+Industrials Sector:
+Annual Return: 20.17%
+Volatility: 13.63%
+Sharpe Ratio: 1.26
+-------------------------
+Financials Sector:
+Annual Return: 30.17%
+Volatility: 14.17%
+Sharpe Ratio: 1.92
+-------------------------
+Communication Services Sector:
+Annual Return: 35.65%
+Volatility: 15.49%
+Sharpe Ratio: 2.11
+-------------------------
+Real Estate Sector:
+Annual Return: 4.66%
+Volatility: 16.2%
+Sharpe Ratio: 0.1
+-------------------------
+Energy Sector:
+Annual Return: 10.36%
+Volatility: 17.72%
+Sharpe Ratio: 0.42
+-------------------------
+Consumer Discretionary Sector:
+Annual Return: 28.32%
+Volatility: 18.74%
+Sharpe Ratio: 1.35
+-------------------------
+Materials Sector:
+Annual Return: 1.79%
+Volatility: 13.61%
+Sharpe Ratio: -0.09
+-------------------------
+Health Care Sector:
+Annual Return: 1.14%
+Volatility: 10.85%
+Sharpe Ratio: -0.17
+-------------------------
+Utilities Sector:
+Annual Return: 21.77%
+Volatility: 15.53%
+Sharpe Ratio: 1.21
+-------------------------
+Consumer Staples Sector:
+Annual Return: 9.22%
+Volatility: 9.81%
+Sharpe Ratio: 0.63
+-------------------------

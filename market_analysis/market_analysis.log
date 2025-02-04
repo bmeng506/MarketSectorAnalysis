@@ -1,0 +1,1625 @@
+2025-01-02 02:20:00,239 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:20:00,239 - ERROR - An error occurred: 'DataCollection' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 28, in main
+    data = collector.get_data(
+        start_date.strftime('%Y-%m-%d'),
+        end_date.strftime('%Y-%m-%d')
+    )
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/data_collection.py", line 25, in get_data
+    self.logger.info(f"Fetching data for {sector} ({symbol})")
+    ^^^^^^^^^^^
+AttributeError: 'DataCollection' object has no attribute 'logger'
+2025-01-02 02:21:33,115 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:21:33,115 - ERROR - An error occurred: 'DataCollection' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 28, in main
+    data = collector.get_data(
+        start_date.strftime('%Y-%m-%d'),
+        end_date.strftime('%Y-%m-%d')
+    )
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/data_collection.py", line 26, in get_data
+    self.logger.info(f"Fetching data for {sector} ({symbol})")
+    ^^^^^^^^^^^
+AttributeError: 'DataCollection' object has no attribute 'logger'
+2025-01-02 02:21:41,077 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:21:41,077 - ERROR - An error occurred: 'DataCollection' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 28, in main
+    data = collector.get_data(
+        start_date.strftime('%Y-%m-%d'),
+        end_date.strftime('%Y-%m-%d')
+    )
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/data_collection.py", line 26, in get_data
+    self.logger.info(f"Fetching data for {sector} ({symbol})")
+    ^^^^^^^^^^^
+AttributeError: 'DataCollection' object has no attribute 'logger'
+2025-01-02 02:25:48,707 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:25:48,708 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 02:25:49,010 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 02:25:49,011 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 02:25:49,102 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 02:25:49,102 - INFO - Fetching data for Financials (XLF)
+2025-01-02 02:25:49,200 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 02:25:49,200 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 02:25:49,268 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 02:25:49,268 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 02:25:49,345 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 02:25:49,345 - INFO - Fetching data for Energy (XLE)
+2025-01-02 02:25:49,443 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 02:25:49,443 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 02:25:49,539 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 02:25:49,539 - INFO - Fetching data for Materials (XLB)
+2025-01-02 02:25:49,630 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 02:25:49,630 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 02:25:49,721 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 02:25:49,722 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 02:25:49,824 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 02:25:49,824 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 02:25:49,928 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 02:25:49,930 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 02:25:49,932 - WARNING - Could not save raw data: Cannot save file into a non-existent directory: 'outputs'
+2025-01-02 02:25:49,936 - ERROR - An error occurred: 'Annual Returns'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 41, in main
+    report = analyzer.create_report()
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/analysis.py", line 50, in create_report
+    annual_return_str = str(round(self.metrics['Annual Returns'][sector] * 100, 2)) + '%'
+                                  ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'Annual Returns'
+2025-01-02 02:31:24,564 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:31:24,564 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 02:31:24,910 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 02:31:24,911 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 02:31:25,062 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 02:31:25,062 - INFO - Fetching data for Financials (XLF)
+2025-01-02 02:31:25,174 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 02:31:25,175 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 02:31:25,255 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 02:31:25,255 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 02:31:25,340 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 02:31:25,340 - INFO - Fetching data for Energy (XLE)
+2025-01-02 02:31:25,452 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 02:31:25,453 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 02:31:25,554 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 02:31:25,555 - INFO - Fetching data for Materials (XLB)
+2025-01-02 02:31:25,668 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 02:31:25,668 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 02:31:25,779 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 02:31:25,780 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 02:31:25,888 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 02:31:25,888 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 02:31:25,995 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 02:31:25,997 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 02:31:26,006 - INFO - Raw data saved successfully
+2025-01-02 02:31:26,009 - ERROR - An error occurred: 'Annual Returns'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 46, in main
+    report = analyzer.create_report()
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/analysis.py", line 50, in create_report
+    annual_return_str = str(round(self.metrics['Annual Returns'][sector] * 100, 2)) + '%'
+                                  ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'Annual Returns'
+2025-01-02 02:34:50,017 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:34:50,017 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 02:34:50,329 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 02:34:50,329 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 02:34:50,409 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 02:34:50,409 - INFO - Fetching data for Financials (XLF)
+2025-01-02 02:34:50,485 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 02:34:50,485 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 02:34:50,541 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 02:34:50,541 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 02:34:50,601 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 02:34:50,601 - INFO - Fetching data for Energy (XLE)
+2025-01-02 02:34:50,709 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 02:34:50,709 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 02:34:50,811 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 02:34:50,811 - INFO - Fetching data for Materials (XLB)
+2025-01-02 02:34:50,888 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 02:34:50,888 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 02:34:50,973 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 02:34:50,973 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 02:34:51,094 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 02:34:51,094 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 02:34:51,184 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 02:34:51,184 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 02:34:51,193 - INFO - Raw data saved successfully
+2025-01-02 02:34:51,196 - INFO - Analysis report written to outputs/reports/analysis_report
+2025-01-02 02:34:51,196 - ERROR - An error occurred: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/style/core.py", line 129, in use
+    style = _rc_params_in_file(style)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/__init__.py", line 903, in _rc_params_in_file
+    with _open_file_or_url(fname) as fd:
+         ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/__init__.py", line 880, in _open_file_or_url
+    with open(fname, encoding='utf-8') as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'seaborn'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 52, in main
+    visual = Visualizer(metrics)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 9, in __init__
+    plt.style.use('seaborn')
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/style/core.py", line 131, in use
+    raise OSError(
+    ...<2 lines>...
+        f"styles are listed in `style.available`)") from err
+OSError: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-01-02 02:38:03,763 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:38:03,764 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 02:38:04,041 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 02:38:04,041 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 02:38:04,118 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 02:38:04,118 - INFO - Fetching data for Financials (XLF)
+2025-01-02 02:38:04,192 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 02:38:04,193 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 02:38:04,251 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 02:38:04,251 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 02:38:04,321 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 02:38:04,321 - INFO - Fetching data for Energy (XLE)
+2025-01-02 02:38:04,398 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 02:38:04,398 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 02:38:04,478 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 02:38:04,478 - INFO - Fetching data for Materials (XLB)
+2025-01-02 02:38:04,559 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 02:38:04,559 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 02:38:04,639 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 02:38:04,639 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 02:38:04,729 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 02:38:04,729 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 02:38:04,813 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 02:38:04,814 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 02:38:04,824 - INFO - Raw data saved successfully
+2025-01-02 02:38:04,827 - INFO - Analysis report written to outputs/reports/analysis_report
+2025-01-02 02:38:05,941 - ERROR - An error occurred: can only concatenate str (not "function") to str
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 53, in main
+    visual.create_plots()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 57, in create_plots
+    self.coorelation_heatmap()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 24, in coorelation_heatmap
+    sb.heatmap(self.metrics['Correlation'],
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               annot = True,
+               ^^^^^^^^^^^^^
+               cmap = 'coolwarm',
+               ^^^^^^^^^^^^^^^^^^
+               center = 0,
+               ^^^^^^^^^^^
+               fmt = lambda x: str(round(x, 2)))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/seaborn/matrix.py", line 459, in heatmap
+    plotter.plot(ax, cbar_ax, kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/seaborn/matrix.py", line 352, in plot
+    self._annotate_heatmap(ax, mesh)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/seaborn/matrix.py", line 260, in _annotate_heatmap
+    annotation = ("{:" + self.fmt + "}").format(val)
+                  ~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "function") to str
+2025-01-02 02:40:03,105 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:40:03,105 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 02:40:03,768 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 02:40:03,768 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 02:40:03,853 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 02:40:03,854 - INFO - Fetching data for Financials (XLF)
+2025-01-02 02:40:03,943 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 02:40:03,943 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 02:40:04,014 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 02:40:04,014 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 02:40:04,086 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 02:40:04,086 - INFO - Fetching data for Energy (XLE)
+2025-01-02 02:40:04,173 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 02:40:04,173 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 02:40:04,266 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 02:40:04,266 - INFO - Fetching data for Materials (XLB)
+2025-01-02 02:40:04,361 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 02:40:04,361 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 02:40:04,475 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 02:40:04,475 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 02:40:04,579 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 02:40:04,579 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 02:40:04,690 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 02:40:04,692 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 02:40:04,703 - INFO - Raw data saved successfully
+2025-01-02 02:40:04,708 - INFO - Analysis report written to outputs/reports/analysis_report
+2025-01-02 02:40:05,160 - ERROR - An error occurred: unhashable type: 'dict'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 53, in main
+    visual.create_plots()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 58, in create_plots
+    self.risk_return_graph()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 40, in risk_return_graph
+    plt.scatter(vols, returns)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/pyplot.py", line 3939, in scatter
+    __ret = gca().scatter(
+        x,
+    ...<14 lines>...
+        **kwargs,
+    )
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axes/_axes.py", line 4894, in scatter
+    x, y = self._process_unit_info([("x", x), ("y", y)], kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axes/_base.py", line 2617, in _process_unit_info
+    axis.update_units(data)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axis.py", line 1765, in update_units
+    default = self._converter.default_units(data, self)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 106, in default_units
+    axis.set_units(UnitData(data))
+                   ~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 182, in __init__
+    self.update(data)
+    ~~~~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 215, in update
+    for val in OrderedDict.fromkeys(data):
+               ~~~~~~~~~~~~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'dict'
+2025-01-02 02:40:55,194 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:40:55,195 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 02:40:55,515 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 02:40:55,515 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 02:40:55,612 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 02:40:55,612 - INFO - Fetching data for Financials (XLF)
+2025-01-02 02:40:55,705 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 02:40:55,705 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 02:40:55,770 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 02:40:55,770 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 02:40:55,850 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 02:40:55,851 - INFO - Fetching data for Energy (XLE)
+2025-01-02 02:40:55,957 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 02:40:55,957 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 02:40:56,071 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 02:40:56,071 - INFO - Fetching data for Materials (XLB)
+2025-01-02 02:40:56,176 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 02:40:56,176 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 02:40:56,280 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 02:40:56,280 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 02:40:56,394 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 02:40:56,394 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 02:40:56,496 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 02:40:56,497 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 02:40:56,508 - INFO - Raw data saved successfully
+2025-01-02 02:40:56,511 - INFO - Analysis report written to outputs/reports/analysis_report
+2025-01-02 02:40:56,977 - ERROR - An error occurred: unhashable type: 'dict'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 53, in main
+    visual.create_plots()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 58, in create_plots
+    self.risk_return_graph()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 40, in risk_return_graph
+    plt.scatter(vols, returns)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/pyplot.py", line 3939, in scatter
+    __ret = gca().scatter(
+        x,
+    ...<14 lines>...
+        **kwargs,
+    )
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axes/_axes.py", line 4894, in scatter
+    x, y = self._process_unit_info([("x", x), ("y", y)], kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axes/_base.py", line 2617, in _process_unit_info
+    axis.update_units(data)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axis.py", line 1765, in update_units
+    default = self._converter.default_units(data, self)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 106, in default_units
+    axis.set_units(UnitData(data))
+                   ~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 182, in __init__
+    self.update(data)
+    ~~~~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 215, in update
+    for val in OrderedDict.fromkeys(data):
+               ~~~~~~~~~~~~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'dict'
+2025-01-02 02:41:32,107 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 02:41:32,107 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 02:41:32,403 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 02:41:32,403 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 02:41:32,488 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 02:41:32,488 - INFO - Fetching data for Financials (XLF)
+2025-01-02 02:41:32,573 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 02:41:32,573 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 02:41:32,638 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 02:41:32,638 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 02:41:32,706 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 02:41:32,707 - INFO - Fetching data for Energy (XLE)
+2025-01-02 02:41:32,795 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 02:41:32,795 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 02:41:32,881 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 02:41:32,881 - INFO - Fetching data for Materials (XLB)
+2025-01-02 02:41:32,964 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 02:41:32,964 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 02:41:33,048 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 02:41:33,048 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 02:41:33,134 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 02:41:33,134 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 02:41:33,230 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 02:41:33,231 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 02:41:33,237 - INFO - Raw data saved successfully
+2025-01-02 02:41:33,240 - INFO - Analysis report written to outputs/reports/analysis_report
+2025-01-02 02:41:33,703 - ERROR - An error occurred: unhashable type: 'dict'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 53, in main
+    visual.create_plots()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 58, in create_plots
+    self.risk_return_graph()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 40, in risk_return_graph
+    plt.scatter(vols, returns)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/pyplot.py", line 3939, in scatter
+    __ret = gca().scatter(
+        x,
+    ...<14 lines>...
+        **kwargs,
+    )
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axes/_axes.py", line 4894, in scatter
+    x, y = self._process_unit_info([("x", x), ("y", y)], kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axes/_base.py", line 2617, in _process_unit_info
+    axis.update_units(data)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axis.py", line 1765, in update_units
+    default = self._converter.default_units(data, self)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 106, in default_units
+    axis.set_units(UnitData(data))
+                   ~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 182, in __init__
+    self.update(data)
+    ~~~~~~~~~~~^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/category.py", line 215, in update
+    for val in OrderedDict.fromkeys(data):
+               ~~~~~~~~~~~~~~~~~~~~^^^^^^
+TypeError: unhashable type: 'dict'
+2025-01-02 03:31:50,347 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:31:50,347 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:31:50,678 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:31:50,678 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:31:50,764 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:31:50,764 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:31:50,855 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:31:50,855 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:31:50,920 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:31:50,920 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:31:50,990 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:31:50,990 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:31:51,093 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:31:51,093 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:31:51,190 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:31:51,190 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:31:51,276 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:31:51,276 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:31:51,409 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:31:51,409 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:31:51,498 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:31:51,498 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:31:51,589 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:31:51,590 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:31:51,600 - INFO - Raw data saved successfully
+2025-01-02 03:31:51,605 - INFO - Analysis report written to outputs/reports/analysis_report
+2025-01-02 03:31:52,206 - ERROR - An error occurred: [Errno 2] No such file or directory: '/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/output/figures/risk_return.png'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 53, in main
+    visual.create_plots()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 59, in create_plots
+    self.risk_return_graph()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 53, in risk_return_graph
+    plt.savefig('output/figures/risk_return.png')
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/pyplot.py", line 1243, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/backend_bases.py", line 2184, in print_figure
+    result = print_method(
+        filename,
+    ...<3 lines>...
+        bbox_inches_restore=_bbox_inches_restore,
+        **kwargs)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/backend_bases.py", line 2040, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+                                                                 ~~~~^
+        *args, **{k: v for k, v in kwargs.items() if k not in skip}))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/backends/backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/backends/backend_agg.py", line 430, in _print_pil
+    mpl.image.imsave(
+    ~~~~~~~~~~~~~~~~^
+        filename_or_obj, self.buffer_rgba(), format=fmt, origin="upper",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        dpi=self.figure.dpi, metadata=metadata, pil_kwargs=pil_kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/image.py", line 1634, in imsave
+    image.save(fname, **pil_kwargs)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/PIL/Image.py", line 2600, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/output/figures/risk_return.png'
+2025-01-02 03:34:04,843 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:34:04,843 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:34:05,143 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:34:05,143 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:34:05,231 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:34:05,231 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:34:05,307 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:34:05,307 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:34:05,373 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:34:05,373 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:34:05,436 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:34:05,436 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:34:05,511 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:34:05,511 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:34:05,589 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:34:05,589 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:34:05,663 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:34:05,663 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:34:05,741 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:34:05,741 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:34:05,826 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:34:05,826 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:34:05,906 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:34:05,907 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:34:05,913 - INFO - Raw data saved successfully
+2025-01-02 03:34:05,916 - INFO - Analysis report written to outputs/reports/analysis_report
+2025-01-02 03:34:07,088 - INFO - Visualization completed
+2025-01-02 03:35:56,834 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:35:56,834 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:35:57,375 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:35:57,375 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:35:57,460 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:35:57,460 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:35:57,546 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:35:57,546 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:35:57,607 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:35:57,608 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:35:57,671 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:35:57,671 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:35:57,750 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:35:57,750 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:35:57,845 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:35:57,845 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:35:57,924 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:35:57,924 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:35:58,026 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:35:58,026 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:35:58,111 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:35:58,111 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:35:58,194 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:35:58,195 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:35:58,205 - INFO - Raw data saved successfully
+2025-01-02 03:35:58,209 - INFO - Analysis report written to outputs/reports/analysis_report
+2025-01-02 03:35:59,341 - INFO - Visualization completed
+2025-01-02 03:41:13,765 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:41:13,766 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:41:14,042 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:41:14,042 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:41:14,138 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:41:14,138 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:41:14,235 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:41:14,235 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:41:14,322 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:41:14,323 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:41:14,396 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:41:14,396 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:41:14,499 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:41:14,499 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:41:14,597 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:41:14,598 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:41:14,700 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:41:14,700 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:41:14,801 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:41:14,802 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:41:14,911 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:41:14,911 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:41:15,031 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:41:15,031 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:41:15,037 - INFO - Raw data saved successfully
+2025-01-02 03:41:15,040 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:41:16,221 - INFO - Visualization completed
+2025-01-02 03:41:49,683 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:41:49,683 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:41:49,978 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:41:49,978 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:41:50,078 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:41:50,078 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:41:50,157 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:41:50,157 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:41:50,214 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:41:50,214 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:41:50,278 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:41:50,279 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:41:50,361 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:41:50,361 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:41:50,442 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:41:50,442 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:41:50,524 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:41:50,524 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:41:50,603 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:41:50,603 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:41:50,680 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:41:50,680 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:41:50,772 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:41:50,772 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:41:50,773 - WARNING - Could not save raw data: Cannot save file into a non-existent directory: '../data'
+2025-01-02 03:41:50,776 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:41:51,912 - INFO - Visualization completed
+2025-01-02 03:42:55,725 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:42:55,725 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:42:56,016 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:42:56,016 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:42:56,110 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:42:56,110 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:42:56,201 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:42:56,202 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:42:56,267 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:42:56,268 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:42:56,342 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:42:56,342 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:42:56,436 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:42:56,436 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:42:56,535 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:42:56,535 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:42:56,630 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:42:56,630 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:42:56,727 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:42:56,728 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:42:56,823 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:42:56,823 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:42:56,918 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:42:56,919 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:42:56,921 - WARNING - Could not save raw data: Cannot save file into a non-existent directory: '../data'
+2025-01-02 03:42:56,926 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:42:58,068 - INFO - Visualization completed
+2025-01-02 03:43:02,117 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:43:02,117 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:43:02,397 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:43:02,397 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:43:02,508 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:43:02,508 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:43:02,603 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:43:02,604 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:43:02,672 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:43:02,673 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:43:02,745 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:43:02,746 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:43:02,847 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:43:02,848 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:43:02,960 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:43:02,960 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:43:03,050 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:43:03,050 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:43:03,141 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:43:03,141 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:43:03,221 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:43:03,221 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:43:03,315 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:43:03,316 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:43:03,318 - WARNING - Could not save raw data: Cannot save file into a non-existent directory: '../data'
+2025-01-02 03:43:03,321 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:43:04,426 - INFO - Visualization completed
+2025-01-02 03:44:08,420 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:44:08,420 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:44:09,784 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:44:09,784 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:44:09,881 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:44:09,881 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:44:09,984 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:44:09,984 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:44:10,057 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:44:10,057 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:44:10,133 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:44:10,134 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:44:10,234 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:44:10,234 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:44:10,335 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:44:10,336 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:44:10,427 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:44:10,427 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:44:10,522 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:44:10,522 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:44:10,611 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:44:10,611 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:44:10,697 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:44:10,698 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:44:10,709 - INFO - Raw data saved successfully
+2025-01-02 03:44:10,713 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:44:11,830 - INFO - Visualization completed
+2025-01-02 03:45:45,109 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:45:45,109 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:45:45,488 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:45:45,488 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:45:45,560 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:45:45,560 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:45:45,638 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:45:45,638 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:45:45,701 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:45:45,701 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:45:45,766 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:45:45,766 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:45:45,854 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:45:45,854 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:45:45,945 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:45:45,945 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:45:46,042 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:45:46,042 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:45:46,127 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:45:46,127 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:45:46,372 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:45:46,372 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:45:46,460 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:45:46,460 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:45:46,468 - INFO - Raw data saved successfully
+2025-01-02 03:45:46,471 - INFO - Analysis report written to ../output/reports/analysis_report.txt
+2025-01-02 03:45:47,790 - INFO - Visualization completed
+2025-01-02 03:47:04,157 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:47:04,157 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:47:04,457 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:47:04,457 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:47:04,552 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:47:04,552 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:47:04,634 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:47:04,634 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:47:04,706 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:47:04,706 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:47:04,773 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:47:04,773 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:47:04,868 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:47:04,868 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:47:04,966 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:47:04,967 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:47:05,066 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:47:05,066 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:47:05,151 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:47:05,151 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:47:05,258 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:47:05,259 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:47:05,352 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:47:05,353 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:47:05,359 - INFO - Raw data saved successfully
+2025-01-02 03:47:05,362 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:47:06,471 - INFO - Visualization completed
+2025-01-02 03:48:36,293 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:48:36,294 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:48:36,580 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:48:36,580 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:48:36,667 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:48:36,667 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:48:36,754 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:48:36,754 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:48:36,824 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:48:36,824 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:48:36,897 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:48:36,897 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:48:36,985 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:48:36,985 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:48:37,081 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:48:37,081 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:48:37,166 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:48:37,167 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:48:37,253 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:48:37,253 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:48:37,341 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:48:37,341 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:48:37,434 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:48:37,434 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:48:37,440 - INFO - Raw data saved successfully
+2025-01-02 03:48:37,443 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:48:38,555 - INFO - Visualization completed
+2025-01-02 03:49:44,011 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:49:44,012 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:49:44,315 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:49:44,316 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:49:44,400 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:49:44,400 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:49:44,485 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:49:44,485 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:49:44,546 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:49:44,546 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:49:44,611 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:49:44,611 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:49:44,704 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:49:44,704 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:49:44,788 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:49:44,788 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:49:44,882 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:49:44,883 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:49:44,980 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:49:44,980 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:49:45,068 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:49:45,068 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:49:45,156 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:49:45,157 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:49:45,168 - INFO - Raw data saved successfully
+2025-01-02 03:49:45,172 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:49:46,365 - INFO - Visualization completed
+2025-01-02 03:51:38,135 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:51:38,135 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:51:38,431 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:51:38,431 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:51:38,515 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:51:38,515 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:51:38,598 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:51:38,598 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:51:38,662 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:51:38,662 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:51:38,734 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:51:38,734 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:51:38,828 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:51:38,828 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:51:38,924 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:51:38,924 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:51:39,012 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:51:39,013 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:51:39,096 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:51:39,096 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:51:39,183 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:51:39,183 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:51:39,264 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:51:39,265 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:51:39,273 - INFO - Raw data saved successfully
+2025-01-02 03:51:39,275 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:51:40,381 - INFO - Visualization completed
+2025-01-02 03:52:32,047 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:52:32,047 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:52:32,286 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:52:32,286 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:52:32,364 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:52:32,364 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:52:32,474 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:52:32,474 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:52:32,533 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:52:32,533 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:52:32,595 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:52:32,595 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:52:32,673 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:52:32,673 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:52:32,756 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:52:32,756 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:52:32,831 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:52:32,831 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:52:32,909 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:52:32,909 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:52:32,991 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:52:32,991 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:52:33,087 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:52:33,088 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:52:33,088 - WARNING - Could not save raw data: [Errno 17] File exists: '../data/raw_market_data.csv'
+2025-01-02 03:52:33,093 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:52:34,199 - INFO - Visualization completed
+2025-01-02 03:57:56,578 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:57:56,579 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:57:56,868 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:57:56,868 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:57:56,944 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:57:56,944 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:57:57,023 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:57:57,023 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:57:57,083 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:57:57,083 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:57:57,154 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:57:57,154 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:57:57,237 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:57:57,237 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:57:57,322 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:57:57,322 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:57:57,404 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:57:57,404 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:57:57,485 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:57:57,485 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:57:57,565 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:57:57,565 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:57:57,645 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:57:57,645 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:57:57,647 - WARNING - Could not save raw data: Cannot save file into a non-existent directory: 'data'
+2025-01-02 03:57:57,650 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:57:58,828 - INFO - Visualization completed
+2025-01-02 03:58:14,438 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:58:14,438 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:58:14,724 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:58:14,724 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:58:14,863 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:58:14,863 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:58:14,956 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:58:14,957 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:58:15,023 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:58:15,023 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:58:15,098 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:58:15,098 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:58:15,192 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:58:15,193 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:58:15,286 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:58:15,287 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:58:15,406 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:58:15,406 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:58:15,501 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:58:15,501 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:58:15,616 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:58:15,616 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:58:15,714 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:58:15,715 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:58:15,726 - INFO - Raw data saved successfully
+2025-01-02 03:58:15,730 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:58:16,846 - INFO - Visualization completed
+2025-01-02 03:59:56,548 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 03:59:56,548 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 03:59:56,830 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 03:59:56,830 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 03:59:56,923 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 03:59:56,923 - INFO - Fetching data for Financials (XLF)
+2025-01-02 03:59:57,011 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 03:59:57,011 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 03:59:57,077 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 03:59:57,077 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 03:59:57,149 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 03:59:57,149 - INFO - Fetching data for Energy (XLE)
+2025-01-02 03:59:57,248 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 03:59:57,248 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 03:59:57,343 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 03:59:57,343 - INFO - Fetching data for Materials (XLB)
+2025-01-02 03:59:57,438 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 03:59:57,439 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 03:59:57,536 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 03:59:57,536 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 03:59:57,628 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 03:59:57,628 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 03:59:57,724 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 03:59:57,725 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 03:59:57,745 - INFO - Raw data saved successfully
+2025-01-02 03:59:57,748 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 03:59:58,865 - INFO - Visualization completed
+2025-01-02 04:00:58,190 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 04:00:58,190 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 04:00:58,433 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 04:00:58,433 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 04:00:58,518 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 04:00:58,518 - INFO - Fetching data for Financials (XLF)
+2025-01-02 04:00:58,618 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 04:00:58,618 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 04:00:58,678 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 04:00:58,678 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 04:00:58,739 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 04:00:58,739 - INFO - Fetching data for Energy (XLE)
+2025-01-02 04:00:58,819 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 04:00:58,819 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 04:00:58,948 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 04:00:58,948 - INFO - Fetching data for Materials (XLB)
+2025-01-02 04:00:59,033 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 04:00:59,033 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 04:00:59,119 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 04:00:59,120 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 04:00:59,212 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 04:00:59,212 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 04:00:59,308 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 04:00:59,309 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 04:00:59,325 - INFO - Raw data saved successfully
+2025-01-02 04:00:59,328 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 04:01:00,427 - INFO - Visualization completed
+2025-01-02 04:02:41,803 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 04:02:41,803 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 04:02:42,061 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 04:02:42,061 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 04:02:42,144 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 04:02:42,144 - INFO - Fetching data for Financials (XLF)
+2025-01-02 04:02:42,227 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 04:02:42,227 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 04:02:42,286 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 04:02:42,287 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 04:02:42,363 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 04:02:42,363 - INFO - Fetching data for Energy (XLE)
+2025-01-02 04:02:42,450 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 04:02:42,450 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 04:02:42,542 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 04:02:42,542 - INFO - Fetching data for Materials (XLB)
+2025-01-02 04:02:42,632 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 04:02:42,632 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 04:02:42,729 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 04:02:42,729 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 04:02:42,829 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 04:02:42,829 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 04:02:42,921 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 04:02:42,923 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 04:02:42,942 - INFO - Raw data saved successfully
+2025-01-02 04:02:42,946 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 04:02:43,500 - INFO - Visualization completed
+2025-01-02 04:02:54,576 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 04:02:54,576 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 04:02:54,828 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 04:02:54,828 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 04:02:54,917 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 04:02:54,917 - INFO - Fetching data for Financials (XLF)
+2025-01-02 04:02:55,011 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 04:02:55,012 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 04:02:55,077 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 04:02:55,077 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 04:02:55,158 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 04:02:55,158 - INFO - Fetching data for Energy (XLE)
+2025-01-02 04:02:55,242 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 04:02:55,243 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 04:02:55,325 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 04:02:55,325 - INFO - Fetching data for Materials (XLB)
+2025-01-02 04:02:55,422 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 04:02:55,422 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 04:02:55,513 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 04:02:55,514 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 04:02:55,616 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 04:02:55,616 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 04:02:55,710 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 04:02:55,711 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 04:02:55,729 - INFO - Raw data saved successfully
+2025-01-02 04:02:55,732 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 04:02:56,268 - INFO - Visualization completed
+2025-01-02 04:03:54,651 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 04:03:54,651 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 04:03:54,946 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 04:03:54,947 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 04:03:55,027 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 04:03:55,027 - INFO - Fetching data for Financials (XLF)
+2025-01-02 04:03:55,125 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 04:03:55,125 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 04:03:55,204 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 04:03:55,204 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 04:03:55,271 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 04:03:55,271 - INFO - Fetching data for Energy (XLE)
+2025-01-02 04:03:55,362 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 04:03:55,362 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 04:03:55,481 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 04:03:55,481 - INFO - Fetching data for Materials (XLB)
+2025-01-02 04:03:55,571 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 04:03:55,572 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 04:03:55,658 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 04:03:55,659 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 04:03:55,754 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 04:03:55,754 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 04:03:55,849 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 04:03:55,850 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 04:03:55,872 - INFO - Raw data saved successfully
+2025-01-02 04:03:55,875 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 04:03:56,423 - INFO - Visualization completed
+2025-01-02 04:04:52,292 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 04:04:52,293 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 04:04:52,587 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 04:04:52,587 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 04:04:52,678 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 04:04:52,678 - INFO - Fetching data for Financials (XLF)
+2025-01-02 04:04:52,771 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 04:04:52,772 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 04:04:52,843 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 04:04:52,843 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 04:04:52,918 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 04:04:52,918 - INFO - Fetching data for Energy (XLE)
+2025-01-02 04:04:53,021 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 04:04:53,022 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 04:04:53,125 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 04:04:53,125 - INFO - Fetching data for Materials (XLB)
+2025-01-02 04:04:53,232 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 04:04:53,233 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 04:04:53,337 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 04:04:53,337 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 04:04:53,444 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 04:04:53,445 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 04:04:53,575 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 04:04:53,577 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 04:04:53,587 - INFO - Raw data saved successfully
+2025-01-02 04:04:53,591 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 04:04:54,141 - INFO - Visualization completed
+2025-01-02 04:05:19,260 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 04:05:19,261 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 04:05:19,550 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 04:05:19,551 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 04:05:19,635 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 04:05:19,635 - INFO - Fetching data for Financials (XLF)
+2025-01-02 04:05:19,713 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 04:05:19,713 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 04:05:19,772 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 04:05:19,772 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 04:05:19,837 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 04:05:19,837 - INFO - Fetching data for Energy (XLE)
+2025-01-02 04:05:19,933 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 04:05:19,933 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 04:05:20,030 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 04:05:20,030 - INFO - Fetching data for Materials (XLB)
+2025-01-02 04:05:20,139 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 04:05:20,139 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 04:05:20,232 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 04:05:20,232 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 04:05:20,333 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 04:05:20,334 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 04:05:20,425 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 04:05:20,426 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 04:05:20,435 - INFO - Raw data saved successfully
+2025-01-02 04:05:20,439 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 04:05:20,995 - INFO - Visualization completed
+2025-01-02 16:33:44,030 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:33:44,030 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:33:44,431 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:33:44,432 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:33:44,588 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:33:44,588 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:33:44,680 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:33:44,680 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:33:44,753 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:33:44,753 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:33:44,827 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:33:44,827 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:33:44,917 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:33:44,917 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:33:45,015 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:33:45,015 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:33:45,118 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:33:45,118 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:33:45,228 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:33:45,228 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:33:45,334 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:33:45,334 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:33:45,440 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:33:45,441 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:33:45,452 - INFO - Raw data saved successfully
+2025-01-02 16:33:45,457 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:33:46,151 - INFO - Visualization completed
+2025-01-02 16:34:44,101 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:34:44,101 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:34:44,413 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:34:44,414 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:34:44,511 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:34:44,511 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:34:44,597 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:34:44,597 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:34:44,666 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:34:44,666 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:34:44,733 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:34:44,733 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:34:44,811 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:34:44,811 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:34:44,905 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:34:44,905 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:34:45,032 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:34:45,033 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:34:45,134 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:34:45,135 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:34:45,237 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:34:45,237 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:34:45,343 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:34:45,347 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:34:45,359 - INFO - Raw data saved successfully
+2025-01-02 16:34:45,364 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:34:45,945 - INFO - Visualization completed
+2025-01-02 16:35:03,095 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:35:03,096 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:35:03,382 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:35:03,382 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:35:03,464 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:35:03,464 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:35:03,547 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:35:03,547 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:35:03,618 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:35:03,618 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:35:03,705 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:35:03,705 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:35:03,815 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:35:03,815 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:35:03,921 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:35:03,921 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:35:04,032 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:35:04,033 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:35:04,142 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:35:04,142 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:35:04,257 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:35:04,258 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:35:04,354 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:35:04,354 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:35:04,364 - INFO - Raw data saved successfully
+2025-01-02 16:35:04,369 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:35:04,939 - INFO - Visualization completed
+2025-01-02 16:35:24,829 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:35:24,829 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:35:25,068 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:35:25,068 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:35:25,170 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:35:25,170 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:35:25,278 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:35:25,278 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:35:25,349 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:35:25,349 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:35:25,435 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:35:25,435 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:35:25,528 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:35:25,528 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:35:25,628 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:35:25,628 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:35:25,734 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:35:25,734 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:35:25,846 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:35:25,846 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:35:25,953 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:35:25,953 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:35:26,150 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:35:26,151 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:35:26,160 - INFO - Raw data saved successfully
+2025-01-02 16:35:26,165 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:35:26,748 - INFO - Visualization completed
+2025-01-02 16:35:45,052 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:35:45,053 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:35:45,394 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:35:45,394 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:35:45,492 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:35:45,492 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:35:45,594 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:35:45,594 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:35:45,665 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:35:45,665 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:35:45,750 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:35:45,750 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:35:45,885 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:35:45,885 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:35:45,981 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:35:45,981 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:35:46,072 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:35:46,072 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:35:46,177 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:35:46,177 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:35:46,298 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:35:46,299 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:35:46,401 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:35:46,402 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:35:46,412 - INFO - Raw data saved successfully
+2025-01-02 16:35:46,417 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:35:46,980 - INFO - Visualization completed
+2025-01-02 16:36:19,180 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:36:19,180 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:36:19,465 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:36:19,465 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:36:19,561 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:36:19,561 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:36:19,660 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:36:19,660 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:36:19,732 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:36:19,732 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:36:19,818 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:36:19,818 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:36:19,910 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:36:19,911 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:36:20,011 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:36:20,012 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:36:20,157 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:36:20,157 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:36:20,267 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:36:20,267 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:36:20,377 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:36:20,377 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:36:20,499 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:36:20,501 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:36:20,511 - INFO - Raw data saved successfully
+2025-01-02 16:36:20,516 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:36:21,090 - INFO - Visualization completed
+2025-01-02 16:36:32,093 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:36:32,094 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:36:32,340 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:36:32,340 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:36:32,441 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:36:32,441 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:36:32,529 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:36:32,529 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:36:32,618 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:36:32,618 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:36:32,694 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:36:32,694 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:36:32,789 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:36:32,789 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:36:32,882 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:36:32,882 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:36:32,996 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:36:32,996 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:36:33,103 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:36:33,103 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:36:33,225 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:36:33,226 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:36:33,334 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:36:33,335 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:36:33,345 - INFO - Raw data saved successfully
+2025-01-02 16:36:33,350 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:36:33,901 - INFO - Visualization completed
+2025-01-02 16:36:47,200 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:36:47,201 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:36:47,525 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:36:47,526 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:36:47,633 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:36:47,633 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:36:47,734 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:36:47,734 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:36:47,829 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:36:47,830 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:36:47,920 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:36:47,920 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:36:48,023 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:36:48,023 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:36:48,140 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:36:48,140 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:36:48,241 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:36:48,241 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:36:48,337 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:36:48,337 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:36:48,444 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:36:48,444 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:36:48,546 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:36:48,547 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:36:48,557 - INFO - Raw data saved successfully
+2025-01-02 16:36:48,561 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:36:49,142 - INFO - Visualization completed
+2025-01-02 16:37:45,317 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:37:45,317 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:37:45,609 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:37:45,609 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:37:45,706 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:37:45,706 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:37:45,819 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:37:45,819 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:37:45,895 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:37:45,895 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:37:45,983 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:37:45,983 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:37:46,096 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:37:46,096 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:37:46,191 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:37:46,191 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:37:46,305 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:37:46,305 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:37:46,409 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:37:46,409 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:37:46,527 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:37:46,527 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:37:46,626 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:37:46,627 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:37:46,634 - INFO - Raw data saved successfully
+2025-01-02 16:37:46,637 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:37:47,106 - ERROR - An error occurred: 'Annotation' object has no property 'horizonalalignment'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 61, in main
+    visual.create_plots()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 61, in create_plots
+    self.risk_return_graph()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/visualization.py", line 43, in risk_return_graph
+    plt.annotate(f"{sector}\nSharpe: {sharpe[sector]:.2f}",
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 xy = (vols[sector], returns[sector]),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+                 horizonalalignment = 'right'
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/pyplot.py", line 2889, in annotate
+    return gca().annotate(
+           ~~~~~~~~~~~~~~^
+        text,
+        ^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/axes/_axes.py", line 721, in annotate
+    a = mtext.Annotation(text, xy, xytext=xytext, xycoords=xycoords,
+                         textcoords=textcoords, arrowprops=arrowprops,
+                         annotation_clip=annotation_clip, **kwargs)
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/text.py", line 1857, in __init__
+    Text.__init__(self, x, y, text, **kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/text.py", line 155, in __init__
+    self.update(kwargs)
+    ~~~~~~~~~~~^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/text.py", line 205, in update
+    ret.extend(super().update(kwargs))
+               ~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/artist.py", line 1223, in update
+    return self._update_props(
+           ~~~~~~~~~~~~~~~~~~^
+        props, "{cls.__name__!r} object has no property {prop_name!r}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/myenv/lib/python3.13/site-packages/matplotlib/artist.py", line 1206, in _update_props
+    raise AttributeError(
+        errfmt.format(cls=type(self), prop_name=k),
+        name=k)
+AttributeError: 'Annotation' object has no property 'horizonalalignment'
+2025-01-02 16:38:08,737 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:38:08,737 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:38:09,051 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:38:09,051 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:38:09,142 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:38:09,143 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:38:09,242 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:38:09,242 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:38:09,321 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:38:09,321 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:38:09,406 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:38:09,406 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:38:09,518 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:38:09,518 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:38:09,625 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:38:09,626 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:38:09,720 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:38:09,720 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:38:09,816 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:38:09,816 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:38:09,947 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:38:09,948 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:38:10,048 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:38:10,049 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:38:10,055 - INFO - Raw data saved successfully
+2025-01-02 16:38:10,058 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:38:10,634 - INFO - Visualization completed
+2025-01-02 16:38:33,987 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:38:33,990 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:38:34,385 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:38:34,385 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:38:34,483 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:38:34,483 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:38:34,572 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:38:34,572 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:38:34,667 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:38:34,667 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:38:34,752 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:38:34,752 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:38:34,859 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:38:34,859 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:38:34,971 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:38:34,971 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:38:35,078 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:38:35,079 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:38:35,194 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:38:35,194 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:38:35,306 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:38:35,306 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:38:35,410 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:38:35,411 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:38:35,421 - INFO - Raw data saved successfully
+2025-01-02 16:38:35,425 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:38:35,999 - INFO - Visualization completed
+2025-01-02 16:38:45,790 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 16:38:45,790 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 16:38:46,101 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 16:38:46,101 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 16:38:46,190 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 16:38:46,191 - INFO - Fetching data for Financials (XLF)
+2025-01-02 16:38:46,283 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 16:38:46,284 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 16:38:46,383 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 16:38:46,383 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 16:38:46,473 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 16:38:46,474 - INFO - Fetching data for Energy (XLE)
+2025-01-02 16:38:46,559 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 16:38:46,559 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 16:38:46,669 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 16:38:46,669 - INFO - Fetching data for Materials (XLB)
+2025-01-02 16:38:46,789 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 16:38:46,789 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 16:38:46,879 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 16:38:46,879 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 16:38:46,995 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 16:38:46,995 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 16:38:47,116 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 16:38:47,117 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 16:38:47,127 - INFO - Raw data saved successfully
+2025-01-02 16:38:47,130 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 16:38:47,706 - INFO - Visualization completed
+2025-01-02 18:24:47,214 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 18:24:47,215 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 18:24:50,802 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 18:24:50,802 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 18:24:50,927 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 18:24:50,927 - INFO - Fetching data for Financials (XLF)
+2025-01-02 18:24:51,063 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 18:24:51,063 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 18:24:51,195 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 18:24:51,195 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 18:24:51,348 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 18:24:51,348 - INFO - Fetching data for Energy (XLE)
+2025-01-02 18:24:51,524 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 18:24:51,525 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 18:24:51,648 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 18:24:51,649 - INFO - Fetching data for Materials (XLB)
+2025-01-02 18:24:51,775 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 18:24:51,775 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 18:24:51,892 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 18:24:51,892 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 18:24:52,033 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 18:24:52,033 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 18:24:52,171 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 18:24:52,172 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 18:24:52,178 - INFO - Raw data saved successfully
+2025-01-02 18:24:52,720 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 18:24:53,218 - INFO - Visualization completed
+2025-01-02 18:28:22,290 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 18:28:22,290 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 18:28:22,617 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 18:28:22,618 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 18:28:22,713 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 18:28:22,713 - INFO - Fetching data for Financials (XLF)
+2025-01-02 18:28:22,807 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 18:28:22,807 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 18:28:22,882 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 18:28:22,882 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 18:28:22,955 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 18:28:22,955 - INFO - Fetching data for Energy (XLE)
+2025-01-02 18:28:23,049 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 18:28:23,049 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 18:28:23,172 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 18:28:23,173 - INFO - Fetching data for Materials (XLB)
+2025-01-02 18:28:23,289 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 18:28:23,289 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 18:28:23,409 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 18:28:23,409 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 18:28:23,514 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 18:28:23,515 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 18:28:23,621 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 18:28:23,622 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 18:28:23,632 - INFO - Raw data saved successfully
+2025-01-02 18:28:23,827 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 18:28:24,315 - INFO - Visualization completed
+2025-01-02 18:35:22,451 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 18:35:22,452 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 18:35:22,766 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 18:35:22,766 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 18:35:22,865 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 18:35:22,866 - INFO - Fetching data for Financials (XLF)
+2025-01-02 18:35:22,964 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 18:35:22,964 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 18:35:23,076 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 18:35:23,076 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 18:35:23,183 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 18:35:23,183 - INFO - Fetching data for Energy (XLE)
+2025-01-02 18:35:23,293 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 18:35:23,293 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 18:35:23,395 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 18:35:23,395 - INFO - Fetching data for Materials (XLB)
+2025-01-02 18:35:23,509 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 18:35:23,510 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 18:35:23,606 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 18:35:23,606 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 18:35:23,702 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 18:35:23,702 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 18:35:23,789 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 18:35:23,790 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 18:35:23,796 - INFO - Raw data saved successfully
+2025-01-02 18:35:23,982 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 18:35:24,474 - INFO - Visualization completed
+2025-01-02 18:38:13,113 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 18:38:13,114 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 18:38:13,405 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 18:38:13,405 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 18:38:13,508 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 18:38:13,508 - INFO - Fetching data for Financials (XLF)
+2025-01-02 18:38:13,604 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 18:38:13,604 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 18:38:13,696 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 18:38:13,696 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 18:38:13,768 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 18:38:13,768 - INFO - Fetching data for Energy (XLE)
+2025-01-02 18:38:13,868 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 18:38:13,868 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 18:38:13,964 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 18:38:13,964 - INFO - Fetching data for Materials (XLB)
+2025-01-02 18:38:14,047 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 18:38:14,047 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 18:38:14,138 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 18:38:14,138 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 18:38:14,226 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 18:38:14,226 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 18:38:14,329 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 18:38:14,330 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 18:38:14,336 - INFO - Raw data saved successfully
+2025-01-02 18:38:14,510 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 18:38:14,999 - INFO - Visualization completed
+2025-01-02 18:40:07,069 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 18:40:07,070 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 18:40:07,358 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 18:40:07,358 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 18:40:07,449 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 18:40:07,449 - INFO - Fetching data for Financials (XLF)
+2025-01-02 18:40:07,544 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 18:40:07,544 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 18:40:07,616 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 18:40:07,616 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 18:40:07,692 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 18:40:07,692 - INFO - Fetching data for Energy (XLE)
+2025-01-02 18:40:07,796 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 18:40:07,796 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 18:40:07,898 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 18:40:07,899 - INFO - Fetching data for Materials (XLB)
+2025-01-02 18:40:08,016 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 18:40:08,016 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 18:40:08,123 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 18:40:08,123 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 18:40:08,219 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 18:40:08,219 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 18:40:08,340 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 18:40:08,342 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 18:40:08,352 - INFO - Raw data saved successfully
+2025-01-02 18:40:08,548 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 18:40:09,032 - INFO - Visualization completed
+2025-01-02 19:02:36,209 - ERROR - An error occurred: module 'streamlit' has no attribute 'title'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 40, in main
+    st.title("Market Analysis")
+    ^^^^^^^^
+AttributeError: module 'streamlit' has no attribute 'title'
+2025-01-02 19:03:10,755 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 19:03:10,755 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 19:03:11,039 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 19:03:11,039 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 19:03:11,143 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 19:03:11,143 - INFO - Fetching data for Financials (XLF)
+2025-01-02 19:03:11,251 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 19:03:11,251 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 19:03:11,337 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 19:03:11,337 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 19:03:11,478 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 19:03:11,479 - INFO - Fetching data for Energy (XLE)
+2025-01-02 19:03:11,594 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 19:03:11,594 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 19:03:11,693 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 19:03:11,694 - INFO - Fetching data for Materials (XLB)
+2025-01-02 19:03:11,780 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 19:03:11,780 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 19:03:11,868 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 19:03:11,868 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 19:03:11,959 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 19:03:11,959 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 19:03:12,073 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 19:03:12,073 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 19:03:12,079 - INFO - Raw data saved successfully
+2025-01-02 19:03:12,082 - INFO - Analysis report written to ../output/reports/analysis_report
+2025-01-02 19:03:12,755 - INFO - Visualization completed

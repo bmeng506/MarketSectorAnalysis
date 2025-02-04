@@ -1,0 +1,62 @@
+2025-01-02 18:40:55,191 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 18:40:55,191 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 18:40:55,499 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 18:40:55,499 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 18:40:55,590 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 18:40:55,591 - INFO - Fetching data for Financials (XLF)
+2025-01-02 18:40:55,725 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 18:40:55,725 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 18:40:55,801 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 18:40:55,801 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 18:40:55,881 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 18:40:55,881 - INFO - Fetching data for Energy (XLE)
+2025-01-02 18:40:56,022 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 18:40:56,022 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 18:40:56,133 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 18:40:56,134 - INFO - Fetching data for Materials (XLB)
+2025-01-02 18:40:56,235 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 18:40:56,235 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 18:40:56,352 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 18:40:56,353 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 18:40:56,483 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 18:40:56,484 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 18:40:56,589 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 18:40:56,591 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 18:40:56,593 - WARNING - Could not save raw data: Cannot save file into a non-existent directory: 'market_analysis/data'
+2025-01-02 18:40:56,763 - ERROR - An error occurred: [Errno 2] No such file or directory: 'market_analysis/output/reports/analysis_report.txt'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 54, in main
+    with open('market_analysis/output/reports/analysis_report.txt', 'w') as file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'market_analysis/output/reports/analysis_report.txt'
+2025-01-02 18:41:56,660 - INFO - Collecting data from 2024-01-02 to 2025-01-01
+2025-01-02 18:41:56,661 - INFO - Fetching data for Information Technology (XLK)
+2025-01-02 18:41:56,739 - INFO - Successfully collected 252 data points for XLK
+2025-01-02 18:41:56,739 - INFO - Fetching data for Industrials (XLI)
+2025-01-02 18:41:56,745 - INFO - Successfully collected 252 data points for XLI
+2025-01-02 18:41:56,745 - INFO - Fetching data for Financials (XLF)
+2025-01-02 18:41:56,756 - INFO - Successfully collected 252 data points for XLF
+2025-01-02 18:41:56,756 - INFO - Fetching data for Communication Services (XLC)
+2025-01-02 18:41:56,764 - INFO - Successfully collected 252 data points for XLC
+2025-01-02 18:41:56,764 - INFO - Fetching data for Real Estate (XLRE)
+2025-01-02 18:41:56,772 - INFO - Successfully collected 252 data points for XLRE
+2025-01-02 18:41:56,772 - INFO - Fetching data for Energy (XLE)
+2025-01-02 18:41:56,779 - INFO - Successfully collected 252 data points for XLE
+2025-01-02 18:41:56,779 - INFO - Fetching data for Consumer Discretionary (XLY)
+2025-01-02 18:41:56,786 - INFO - Successfully collected 252 data points for XLY
+2025-01-02 18:41:56,786 - INFO - Fetching data for Materials (XLB)
+2025-01-02 18:41:56,794 - INFO - Successfully collected 252 data points for XLB
+2025-01-02 18:41:56,794 - INFO - Fetching data for Health Care (XLV)
+2025-01-02 18:41:56,801 - INFO - Successfully collected 252 data points for XLV
+2025-01-02 18:41:56,801 - INFO - Fetching data for Utilities (XLU)
+2025-01-02 18:41:56,807 - INFO - Successfully collected 252 data points for XLU
+2025-01-02 18:41:56,807 - INFO - Fetching data for Consumer Staples (XLP)
+2025-01-02 18:41:56,813 - INFO - Successfully collected 252 data points for XLP
+2025-01-02 18:41:56,814 - INFO - Created DataFrame with shape: (252, 11)
+2025-01-02 18:41:56,814 - WARNING - Could not save raw data: Cannot save file into a non-existent directory: 'market_analysis/data'
+2025-01-02 18:41:56,844 - ERROR - An error occurred: [Errno 2] No such file or directory: 'market_analysis/output/reports/analysis_report.txt'
+Traceback (most recent call last):
+  File "/Users/brianmeng/Documents/Visual Studio Code/StockMarketAnalysis/market_analysis/src/main.py", line 54, in main
+    with open('market_analysis/output/reports/analysis_report.txt', 'w') as file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'market_analysis/output/reports/analysis_report.txt'
